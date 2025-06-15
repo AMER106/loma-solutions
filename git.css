@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  gap: 10px;
+  background-color: darkslategray;
+  height: 100vh;
+  padding: 20px;
+}
+.s{
+  padding: 20px;
+  background-color: lightgray;
+  text-align: center;
+  color: black;
+}
