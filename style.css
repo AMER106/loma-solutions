@@ -1,14 +1,45 @@
-:root{
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --background-color: #f4f4f4;
-  --text-color: #333;
-  --font-family: 'Arial', sans-serif;
+/* Default (light) theme variables */
+:root {
+  --background: white;
+  --text-color: black;
+  --button-bg: #3498db;
+  --button-text: white;
 }
-h2 {
-  color: var(--primary-color);
-  font-family: var(--font-family);
-  font-size: 24px;
-  margin-bottom: 12px;
-  background-color: var(--background-color);
+
+/* Dark theme overrides */
+.dark-theme {
+  --background: #121212;
+  --text-color: #f0f0f0;
+  --button-bg: #444;
+  --button-text: #f0f0f0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
 }

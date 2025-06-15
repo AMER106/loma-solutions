@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-   <h2>i am a var u can learn more</h2>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS var() Theme Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple example of using CSS variables and <code>var()</code>.</p>
+    <button id="toggleBtn">Toggle Theme</button>
+  </div>
+
+  <script>
+    // Toggle the dark theme on and off
+    const toggleBtn = document.getElementById("toggleBtn");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+    });
+  </script>
+
+</body>
 </html>
